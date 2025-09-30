@@ -1,0 +1,237 @@
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+/* ------------------- COVER PAGE (Halaman Depan) ------------------- */
+.cover-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('cover-bg.jpg') center/cover; /* Ganti 'cover-bg.jpg' dengan gambar background/pattern */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    color: white;
+    padding: 20px;
+}
+
+.cover-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Overlay gelap agar teks terbaca */
+}
+
+.cover-page * {
+    z-index: 101;
+}
+
+.to-text {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.guest-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#open-button {
+    background-color: #A0522D; /* Warna Coklat Sandalwood */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#open-button:hover {
+    background-color: #8B4513; /* Warna Coklat lebih gelap */
+}
+
+/* ------------------- MAIN CONTENT ------------------- */
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- Hero Section (Foto & Nama) --- */
+.hero-section {
+    padding: 40px 20px;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 50%; /* Foto bulat */
+    border: 5px solid #A0522D; /* Border warna Sandalwood */
+}
+
+.couple-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greeting {
+    font-style: italic;
+    color: #666;
+    margin-top: 15px;
+}
+
+.names {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #A0522D;
+    margin: 0;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.verse {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #888;
+    padding: 0 15px;
+}
+
+/* --- Detail Acara --- */
+.detail-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.detail-section h3 {
+    color: #A0522D;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.event-box {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px dashed #A0522D30;
+    border-radius: 5px;
+}
+
+.event-box h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.map-button {
+    display: inline-block;
+    background-color: #3CB371; /* Warna Hijau Mint */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.map-button:hover {
+    background-color: #2E8B57;
+}
+
+/* --- Amplop Digital (Nomor Rekening) --- */
+.gift-section {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #f0f0f0;
+}
+
+.gift-section h3 {
+    color: #A0522D;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.account-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bank-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.account-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #A0522D;
+    margin: 5px 0;
+}
+
+.account-owner {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.copy-button {
+    background-color: #3498db; /* Warna Biru */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #2980b9;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #A0522D;
+    color: white;
+    font-size: 0.9rem;
+}

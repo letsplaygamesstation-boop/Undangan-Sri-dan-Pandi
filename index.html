@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan | Sri Mulyati & Pandi Supandi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="cover-page" class="cover-page">
+        <p class="to-text">Kepada Yth:</p>
+        <h1 class="guest-name">Bapak/Ibu/Saudara/i</h1>
+        <button id="open-button">Buka Undangan</button>
+    </div>
+
+    <div id="main-content" class="main-content hidden">
+
+        <section class="hero-section">
+            <div class="photo-container">
+                <img src="couple.jpg" alt="Foto Mempelai Sri Mulyati dan Pandi Supandi" class="couple-photo">
+            </div>
+            <p class="greeting">We Are Getting Married</p>
+            <h2 class="names">Sri Mulyati & Pandi Supandi</h2>
+            <p class="date">Minggu, 21 Desember 2025</p>
+            <p class="verse">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang." (QS. Ar-Ruum: 21)</p>
+        </section>
+
+        <section class="detail-section">
+            <h3>Detail Acara</h3>
+            <div class="event-box">
+                <h4>Akad Nikah</h4>
+                <p>Pukul 08.00 - 10.00 WIB</p>
+                <p>Seelawi, rt005/rw005, Desa/Kel Tuguraja, Kec.Cihideung, Kab.Tasikmalaya</p>
+            </div>
+            <div class="event-box">
+                <h4>Resepsi</h4>
+                <p>Pukul 11.00 - 14.00 WIB</p>
+                <p>Seelawi, rt005/rw005, Desa/Kel Tuguraja, Kec.Cihideung, Kab.Tasikmalaya</p>
+            </div>
+            <a href="https://maps.app.goo.gl/1cjvxSCoNKdFy7Zt6" target="_blank" class="map-button">Lihat Lokasi di Peta</a>
+        </section>
+
+        <section class="gift-section">
+            <h3>Amplop Digital (Kirim Hadiah)</h3>
+            <p>Doa dan restu Anda adalah kado terindah, namun jika Anda ingin memberikan tanda kasih, silakan melalui:</p>
+            
+            <div class="account-box">
+                <p class="bank-name">Bank BCA</p>
+                <p class="account-number" id="account-bca">7090181798</p>
+                <p class="account-owner">a/n Sri Mulyati</p>
+                <button class="copy-button" onclick="copyToClipboard('account-bca', this)">Salin No. Rekening</button>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Kami yang berbahagia, Sri mulyati & Pandi Supandi</p>
+            <p>&copy; 2025 Undangan Digital</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
